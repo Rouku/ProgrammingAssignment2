@@ -1,9 +1,15 @@
-## The objective of the following two functions is to use cache to
-## store the result of a previously computed operation thereby, removing 
-## the need to run the computation each time it is called which can be 
-## time-consuming.
+## Caching the Inverse of a Matrix
 
-## Write a short comment describing this function
+## The objective of the following two functions is to use cache to
+## store the result of a previously computed operation (i.e. the 
+## inverse of a matrix) thereby, removing the need to run the 
+## computation each time it is called, which can be time-consuming.
+
+## The first function, makeCacheMatrix creates a list containing a function to:
+## 1. set the value of the matrix
+## 2. get the value of the matrix
+## 3. set the value of the inverse
+## 4. get the value of the inverse
 
 makeCacheMatrix <- function(x = matrix()) {
         m <- NULL
