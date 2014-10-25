@@ -1,5 +1,7 @@
-## Put comments here that give an overall description of what your
-## functions do
+## The objective of the following two functions is to use cache to
+## store the result of a previously computed operation thereby, removing 
+## the need to run the computation each time it is called which can be 
+## time-consuming.
 
 ## Write a short comment describing this function
 
@@ -19,7 +21,7 @@ makeCacheMatrix <- function(x = matrix()) {
 
 ## Write a short comment describing this function
 
-cacheSolve <- function(x, ...) { ## Return a matrix that is the inverse of 'x'
+cacheSolve <- function(x, ...) {   ## Return a matrix that is the inverse of 'x'
       m <- x$getinverse()
       if(!is.null(m)) {
       message("getting cached data")
